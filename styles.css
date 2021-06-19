@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/*.nav-center h4{
+    color: black;
+    margin-top: 0%;
+    font-size:1.5em;
+    text-align: center;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    display: block;
+    padding: 22px;
+    text-align: center;
+    color: black;
+}
+.nav-links li a:hover{
+    background-color: aliceblue;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+*/
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-75%,-50%);
+    font-size: 30px;
+  }
+  
+.nav-links li {
+    float: left;
+  }
+  
+.nav-links li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.nav-links li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+.nav-links .active {
+    background-color: #04AA6D;
+  }
+
+.nav-center h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+*{
+  font-family: 'Caveat', cursive;/*
+  width: 300px;
+  border: 15px;
+  padding: 5px;
+  margin: 20px;*/
+  text-align: center;
+}
+
+.container{
+    font-size: 40px;
+}
+
+.btn 
+{
+    width: 150px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.btn-hero{
+    width: 150px;
+    border-radius: 10px;
+}
