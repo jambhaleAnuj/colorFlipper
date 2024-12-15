@@ -1,86 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
-/*.nav-center h4{
-    color: black;
-    margin-top: 0%;
-    font-size:1.5em;
-    text-align: center;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    display: block;
-    padding: 22px;
-    text-align: center;
-    color: black;
-}
-.nav-links li a:hover{
-    background-color: aliceblue;
-}
-
-.nav-links ul{
-    list-style-type: none;
-    overflow: hidden;
-}
-*/
-.nav-links{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-75%,-50%);
-    font-size: 30px;
-  }
-  
-.nav-links li {
-    float: left;
-  }
-  
-.nav-links li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-.nav-links li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-.nav-links .active {
-    background-color: #04AA6D;
-  }
-
-.nav-center h1{
-    text-align: center;
-    font-size: 50px;
-}
-
-*{
-  font-family: 'Caveat', cursive;/*
-  width: 300px;
-  border: 15px;
-  padding: 5px;
-  margin: 20px;*/
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+  font-family: "Caveat", cursive;
   text-align: center;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
 }
 
-.container{
-    font-size: 40px;
+/* Navigation Styles */
+.nav-center {
+  margin-bottom: 20px; /* Add some space below the title */
 }
 
-.btn 
-{
-    width: 150px;
-    border-radius: 10px;
-    font-size: large;
+.nav-center h1 {
+  font-size: 50px;
 }
 
-.btn-hero{
-    width: 150px;
-    border-radius: 10px;
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the links */
+  font-size: 30px;
+}
+
+.nav-links li {
+  margin: 0 15px; /* Add space between links */
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 14px 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links li a:hover {
+  background-color: #111;
+  color: white; /* Dark background on hover */
+}
+
+.nav-links .active {
+  background-color: #04aa6d; /* Active link color */
+}
+
+/* Main Container Styles */
+.container {
+  font-size: 40px;
+  margin-top: 20px; /* Add some space above the container */
+}
+
+/* Button Styles */
+.btn {
+  width: 150px;
+  border-radius: 10px;
+  font-size: large;
+  background-color: #04aa6d; /* Default button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #037a4d; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    font-size: 20px; /* Smaller font size for mobile */
+    flex-direction: column; /* Stack links vertically on mobile */
+  }
+
+  .container {
+    font-size: 30px; /* Smaller font size for mobile */
+  }
+
+  .btn {
+    width: 120px; /* Smaller button for mobile */
+  }
 }
