@@ -35,8 +35,10 @@ Color Flipper is a simple JavaScript web application that allows users to change
 
 3. Open `index.html` in your web browser to view the application.
 
-```
 ## Flowchart
 
 ![alt text](flowchart.jpeg)
+
+```
+
 ```
